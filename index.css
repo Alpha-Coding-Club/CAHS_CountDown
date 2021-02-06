@@ -1,17 +1,109 @@
+@font-face {
+  font-family: 'Nexa';
+    src: url('NexaTextDemo-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Curly';
+    src: url('BirdsOfParadisePersonalUseOnly-dX7X.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+text-align:center;
+
+}
+
+h2 {
+text-align: center;
+font-size: 5rem;
+}
+
+h4 {
+text-align: center;
+font-size: 2rem;
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Curly';
+}
+
+h6 {
+text-align: center;
+
+}
+
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #ffcc7a, #f5bdff, #7fc2f0, #62e3b4);
 	background-size: 1000% 1000%;
 	animation: gradient 15s ease infinite;
+	font-family: 'Nexa';
 }
+
 
 @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
+		background-position: 0 50%;
 	}
 	50% {
 		background-position: 100% 50%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 0 50%;
 	}
 }
+
+.new-year {
+  font-family: 'Major Mono Display', monospace;
+  color: #333333;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+.year {
+  position: relative;
+  left: 50%;
+  display: table;
+  font-size: 6em;
+  transform: translateX(-50%);
+}
+.year2 {
+  transform: translateX(-50%) rotateX(180deg);
+  opacity: 0.2;
+}
+.digit {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  opacity: 0;
+}
+.controls {
+  margin-top: 30px;
+}
+.control {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.8em;
+  border-left: 1px solid #333333;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+}
+.control:first-child {
+  border-left: none;
+}
+
+
+
+/*i want to animate the font when the user goes on the website, it'd look nice.*/
